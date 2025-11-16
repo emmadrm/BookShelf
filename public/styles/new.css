@@ -1,0 +1,71 @@
+.BookContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.newBook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  width: 100%;
+  max-width: 600px; /* μέγιστο πλάτος φόρμας */
+  gap: 15px;
+   padding: 30px;
+}
+
+.newBook input, .newBook textarea {
+    width: 80%;
+  padding: 12px 14px;
+  border: 1px solid #888;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.BookContainer img {
+    width: 180px;
+    height: 240px;
+}
+.stars {
+    display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.starBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.bi-star-fill {
+  color: gold;
+}
+
+.bi-star {
+  color: #000000;
+}
+
+@media (max-width: 700px) {
+  .BookContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .BookContainer img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+
+  .newBook {
+    width: 100%;
+  }
+}
+
